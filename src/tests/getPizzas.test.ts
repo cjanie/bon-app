@@ -1,4 +1,4 @@
-import { assert } from 'console';
+
 import { InMemoryPizzaQuery } from '../adapters/InMemoryPizzaQuery';
 import { Pizza } from '../businesslogic/models/Pizza';
 import { getPizzas } from '../businesslogic/usecases/getPizzas';

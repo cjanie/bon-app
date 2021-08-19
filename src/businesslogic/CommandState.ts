@@ -7,6 +7,7 @@ export interface CommandState {
     countNumberOfItems: () => number
     countTotalOfCommandItem: (commandItem: CommandItem) => number
     countTotal: () => number
+    commandStatus: string | undefined
 }
 
 export const commandState: CommandState = {
@@ -44,5 +45,8 @@ export const commandState: CommandState = {
             total += commandState.countTotalOfCommandItem(commandItem);
         }); 
         return total;
-    }
+    },
+
+    commandStatus: undefined  
+    
 }
